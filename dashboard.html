@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard Karyawan</title> 
+
+  <!-- Link ke Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome CDN -->
+  <script src="https://kit.fontawesome.com/27a0974065.js" crossorigin="anonymous"></script>
+
+  <!-- Link ke CSS lokal -->
+  <link rel="stylesheet" type="text/css" href="aplikasi-karyawan.css">
+
+  <!-- Tambahan CSS Kustom -->
+  <style>
+    .custom-hr {
+      border-top: 1px solid #6c757d;
+    }
+    .card-body {
+      position: relative;
+    }
+    .card-body-icon {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 5rem;
+      opacity: 0.2;
+      color: #ffffff;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-warning fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">SELAMAT DATANG | <b>UNIVERSITAS PAMULANG</b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="d-flex ms-auto" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <div class="icon ms-3">
+          <h5 class="mb-0">
+            <i class="fa-solid fa-envelope ms-3" data-bs-toggle="tooltip" title="Surat Masuk"></i>
+            <i class="fa-solid fa-bell ms-3" data-bs-toggle="tooltip" title="Notifikasi"></i>
+            <i class="fa-solid fa-right-from-bracket ms-3" data-bs-toggle="tooltip" title="Sign Out"></i>
+          </h5>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="row no-gutters mt-5">
+    <div class="col-md-2 bg-dark mt-2 pr-3 pt-4">
+      <ul class="nav flex-column ml-3 mb-5">
+        <li class="nav-item">
+          <a class="nav-link active text-white" href="dashboard.html"><i class="fa-solid fa-house me-2"></i> Dashboard</a>
+          <hr class="custom-hr">
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="pegawai.html"><i class="fa-solid fa-users me-2"></i> Daftar Pegawai</a>
+          <hr class="custom-hr">
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="jabatan.html"><i class="fa-solid fa-user-plus me-2"></i> Jabatan</a>
+          <hr class="custom-hr">
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="absensi.html"><i class="fa-solid fa-calendar-check me-2"></i> Absensi</a>
+          <hr class="custom-hr">
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="izin.html"><i class="fa-solid fa-pen-to-square"></i> Izin</a>
+          <hr class="custom-hr">
+        </li>
+      </ul>
+    </div>
+    
+    <div class="col-md-10 p-5 pt-2 mt-5">
+      <h3><i class="fa-solid fa-house me-2"></i> DASHBOARD</h3>
+      <hr>
+
+      <!-- Baris untuk Statistik -->
+      <div class="row text-white">
+        <div class="col-md-4">
+          <div class="card bg-info text-white mb-4">
+            <div class="card-body">
+              <div class="card-body-icon">
+                <i class="fa-solid fa-users"></i>
+              </div>
+              <h5 class="card-title">DASHBOARD</h5>
+              <div class="display-4">15</div>
+              <a href="#" class="text-white"><p class="card-text">Lihat Detail <i class="fas fa-angle-double-right ms-2"></i></p></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card bg-success text-white mb-4">
+            <div class="card-body">
+              <div class="card-body-icon">
+                <i class="fa-solid fa-calendar-check"></i>
+              </div>
+              <h5 class="card-title">ABSENSI</h5>
+              <div class="display-4">13</div>
+              <a href="#" class="text-white"><p class="card-text">Lihat Detail <i class="fas fa-angle-double-right ms-2"></i></p></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card bg-danger text-white mb-4">
+            <div class="card-body">
+              <div class="card-body-icon">
+                <i class="fa-solid fa-square-check"></i>
+              </div>
+              <h5 class="card-title">IZIN</h5>
+              <div class="display-4">2</div>
+              <a href="#" class="text-white"><p class="card-text">Lihat Detail <i class="fas fa-angle-double-right ms-2"></i></p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Baris untuk Sosial Media -->
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card text-white text-center mb-4">
+            <div class="card-header bg-danger display-4 pt-4 pb-4">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title text-danger">INSTAGRAM</h5>
+              <a href="#" class="btn btn-danger">FOLLOW</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="card text-white text-center mb-4">
+            <div class="card-header bg-info display-4 pt-4 pb-4">
+              <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title text-info">FACEBOOK</h5>
+              <a href="#" class="btn btn-info">LIKE</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="card text-white text-center mb-4">
+            <div class="card-header bg-primary display-4 pt-4 pb-4">
+              <i class="fa-brands fa-x-twitter"></i>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title text-primary">X</h5>
+              <a href="#" class="btn btn-primary">FOLLOW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Bootstrap dan Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+  <!-- Inisialisasi tooltip -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
